@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  // #imageSlider {
+  //   outline: red solid;
+  //   .imageSliderContainer {
+  //     display: flex;
+  //     flex-direction: row;
+  //     // overflow: hidden;
+  //     border: rgb(0, 0, 0) solid;
+  //     width: 350px;
+  //     height: 500px;
+  //   }
+  //   @keyframes slideimage {
+  //     0% {
+  //       transform: translateX(-350px);
+  //     }
+  //     5% {
+  //       transform: translateX(-700px);
+  //     }
+  //     10% {
+  //       transform: translateX(-1050px);
+  //     }
+  //     15% {
+  //       transform: translateX(-1400px);
+  //     }
+  //     20% {
+  //       transform: translateX(-1750px);
+  //     }
+  //     25% {
+  //       transform: translateX(-2010px);
+  //     }
+  //   }
+  //   img {
+  //     // animation: "slideimage" 20s infinite;
+  //     outline: red solid;
+  //     // width: 100%;
+  //   }
+  // }
+  .nav-bar > h1:first-of-type {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  .nav-bar > h1:nth-of-type(2) {
+    color: white;
+    background-color: red;
+  }
+  .nav-bar {
+    line-height: 6vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.883);
+    padding: 10px;
+    h1 {
+      font-size: 4vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 5px 10px;
+    }
+
+    ul {
+      margin: 0 20px 0 auto;
+      width: fit-content;
+      display: flex;
+      padding: 0 1vh 0 1vh;
+      gap: 5px 10px;
+      justify-content: space-around;
+      list-style-type: none;
+      li {
+        a {
+          margin: 0 10px 0 10px;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          border-bottom: red solid;
+          padding: 0 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 3vh;
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin: 3vh 0 0 0;
+  #card-container {
+    padding: 5vh;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    justify-content: space-evenly;
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #ffffff00;
+    }
+    .card {
+      background-color: rgba(255, 0, 0, 0.469);
+      overflow-y: scroll;
+      width: 250px;
+      height: 350px;
+      padding: 3vh;
+      img {
+        width: 100%;
+        height: 200px;
+      }
+      h3 {
+        font-size: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 10px 0 10px 0;
+      }
+      h4 {
+        margin-top: 2vh;
+        padding: 10px 0 10px 0;
+        font-size: 20px;
+        color: rgb(251, 255, 0);
+      }
+    }
+  }
+}
+main {
+  .product-detail-wrapper {
+    outline: rgba(190, 36, 1, 0.771) solid;
+    padding: 0vh 1vh 0 4vh;
+    background-color: rgba(190, 36, 1, 0.719);
+    .product-img-des {
+      display: flex;
+      h1 {
+        color: white;
+        font-size: 2.5vh;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        padding: 2vh 1vh 1vh 5vh;
+      }
+      p {
+        font-size: 2.2vh;
+        color: white;
+        padding: 2vh 1vh 1vh 5vh;
+      }
+      button {
+        padding: 2vh 1vh 1vh 5vh;
+        margin: 2vh 1vh 2vh 5vh;
+        outline: none;
+        border: none;
+      }
+      .productCategory {
+        font-size: 2.5vh;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        background-color: white;
+        padding: 20px;
+        height: 30vw;
+        width: 35vw;
+      }
+      .price {
+        margin: 0 0 0 5vh;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        width: fit-content;
+        font-size: 3.5vh;
+      }
+      .bi.bi-cart4 {
+        font-size: 3vh;
+      }
+      .addtocart {
+        cursor: pointer;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        margin: 2vh 5vh;
+        font-size: 2.5vh;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  main {
+    .product-detail-wrapper {
+      .product-img-des {
+        h1 {
+          font-size: 2vh;
+        }
+        p {
+          font-size: 1.5vh;
+        }
+        button {
+          padding: 1vh;
+        }
+        .productCategory {
+          font-size: 2vh;
+        }
+        img {
+          background-color: white;
+          padding: 20px;
+          height: 30vw;
+          width: 35vw;
+        }
+        .price {
+          font-size: 2.5vh;
+        }
+        .bi.bi-cart4 {
+          font-size: 3vh;
+        }
+        .addtocart {
+          font-size: 2vh;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  main {
+    .product-detail-wrapper {
+      .product-img-des {
+        flex-direction: column;
+        h1 {
+          font-size: 2vh;
+          padding: 2vh 0;
+        }
+        p {
+          padding: 1vh 0;
+          font-size: 1.5vh;
+        }
+        button {
+          margin: 2vh 0;
+          padding: 1vh;
+        }
+        .productCategory {
+          font-size: 2vh;
+        }
+        img {
+          background-color: white;
+          padding: 20px;
+          height: 50vw;
+          width: 60vw;
+        }
+        .price {
+          padding: 1vh 2vh;
+          margin: 1vh 0;
+          font-size: 2.5vh;
+        }
+        .bi.bi-cart4 {
+          font-size: 3vh;
+        }
+        .addtocart {
+          margin: 1vh 0;
+          font-size: 2vh;
+        }
+      }
+    }
+  }
+}
