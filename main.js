@@ -14,8 +14,14 @@ $(document).ready(() => {
           const productPage = `product.html?id=${product.id}`
           window.location.href = productPage
         })
-
+        // slider
+        const overview = $('.imageSliderContainer')
+        const sliderImageContainer = $('.slider')
+        const sliderImages = $('<img>').attr({ src: product.image })
+        sliderImageContainer.append(sliderImages)
+        overview.append(sliderImageContainer)
       })
+
 
     })
     .fail(() => {

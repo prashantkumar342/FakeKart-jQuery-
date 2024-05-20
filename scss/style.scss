@@ -4,42 +4,31 @@
   box-sizing: border-box;
 }
 header {
-  // #imageSlider {
-  //   outline: red solid;
-  //   .imageSliderContainer {
-  //     display: flex;
-  //     flex-direction: row;
-  //     // overflow: hidden;
-  //     border: rgb(0, 0, 0) solid;
-  //     width: 350px;
-  //     height: 500px;
-  //   }
-  //   @keyframes slideimage {
-  //     0% {
-  //       transform: translateX(-350px);
-  //     }
-  //     5% {
-  //       transform: translateX(-700px);
-  //     }
-  //     10% {
-  //       transform: translateX(-1050px);
-  //     }
-  //     15% {
-  //       transform: translateX(-1400px);
-  //     }
-  //     20% {
-  //       transform: translateX(-1750px);
-  //     }
-  //     25% {
-  //       transform: translateX(-2010px);
-  //     }
-  //   }
-  //   img {
-  //     // animation: "slideimage" 20s infinite;
-  //     outline: red solid;
-  //     // width: 100%;
-  //   }
-  // }
+  .imageSliderContainer {
+    border: solid 1vh rgb(255, 0, 0);
+    display: flex;
+    .slider {
+      // outline: red solid;
+      border: black solid 1vh;
+      width: 50vw;
+      height: 70vh;
+      display: flex;
+      overflow: hidden;
+      img {
+        animation: "slideshow" 20s infinite ease;
+        // transform: translateX(-50vw);
+        padding: 0 0.5vh;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+      }
+
+      @keyframes slideshow {
+        0% {
+          transform: translateX(50vw);
+        }
+      }
+    }
+  }
   .nav-bar > h1:first-of-type {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
